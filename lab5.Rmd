@@ -1,6 +1,6 @@
 ---
 title: "Lab 5"
-author: "Shawn Santo"
+author: "Sophia Liu"
 date: "02-07-20"
 output: 
   html_document:
@@ -49,6 +49,10 @@ senators <- fromJSON(paste(readLines(json_file), collapse = ""))
 ### Exercises
 
 1. Print the structure for the first senator, Lamar Alexander, in the list.
+
+```{r}
+senators$objects[[1]]
+```
 
 2. Extract the birthday for each North Carolina senator.
 
